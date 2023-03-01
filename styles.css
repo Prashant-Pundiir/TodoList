@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #a2b7cf;
+  height: 35%;
+  width: 600px;
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+  border-radius: 8px;
+}
+
+#container {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#newtask{
+  position: relative;
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#newtask input{
+  border-radius: 5px;
+  width: 70%;
+  height: 45px;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+
+}
+
+#newtask input:focus{
+  outline: none;
+  border-color: #19A68C;
+}
+
+#newtask button{
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 45px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  background: #19A68C;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #e5e5e5; */
+}
+ul li {
+  padding: 10px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+  background: #f3f3f3;
+}
+/* ul li:hover {
+  
+} */
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+} 
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 28px;
+    padding: 5px 0px;
+    border-radius: 3px;
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+.add-task {
+  width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 11px;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 3px;
+}
+#total-tasks {
+  margin-bottom: 20px;
+  font-size: 13px;
+    margin-left: 2px;
+    color: gray;
+}
